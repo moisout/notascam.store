@@ -16,7 +16,7 @@
                 <label class="form-label" for="credit-card-nr">Credit card number</label>
                 <input type="text" id="credit-card-nr" name="credit-card-nr" placeholder="1234 4321 1234 4321" />
                 <label class="form-label" for="exp-date">Expiration date</label>
-                <input type="text" id="exp-date" name="exp-date" placeholder="MM/YY" required pattern="((0|1)\d){1}\/2\d{1}"/>
+                <input type="text" id="exp-date" name="exp-date" placeholder="MM/YY" required pattern="((0|1)\d){1}\/(2\d{1}|202\d{1})"/>
                 <label class="form-label" for="cvv">CVV</label>
                 <input type="text" id="cvv" name="cvv" placeholder="eg. 321" required pattern="\d{3}"/>
                 <input class="form-submit" type="submit" value="Send pls" />
