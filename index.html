@@ -5,23 +5,27 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
         <title>Not a scam</title>
     </head>
     <body>
-        <div class="lockscreen">
+        <div class="form-window">
+            <h1>Definitely not a scam</h1>
+            <form action="" class="input-form" method="get">
+                <label class="form-label" for="credit-card-nr">Credit card number</label>
+                <input type="text" id="credit-card-nr" name="credit-card-nr" placeholder="1234 4321 1234 4321" />
+                <label class="form-label" for="exp-date">Expiration date</label>
+                <input type="text" id="exp-date" name="exp-date" placeholder="MM/YY" required pattern="((0|1)\d){1}\/2\d{1}"/>
+                <label class="form-label" for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="eg. 321" required pattern="\d{3}"/>
+                <input class="form-submit" type="submit" value="Send pls" />
+            </form>
+            <div id="output"></div>
+        </div>
+        <div class="lockscreen hidden">
             <input type="number" name="code" id="code" />
         </div>
-        <h1>Definitely not a scam</h1>
-        <form action="" method="get">
-            <label for="credit-card-nr">Credit card number</label>
-            <input type="text" id="credit-card-nr" name="credit-card-nr" />
-            <label for="exp-date">Expiration date</label>
-            <input type="text" id="exp-date" name="exp-date" placeholder="MM/YY" required pattern="((0|1)\d){1}\/2\d{1}"/>
-            <label for="cvv">CVV</label>
-            <input type="text" id="cvv" name="cvv" placeholder="eg. 321" required pattern="\d{3}"/>
-            <input type="submit" value="Send pls" />
-        </form>
-        <div id="output"></div>
         <script src="index.js"></script>
     </body>
 </html>

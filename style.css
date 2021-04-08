@@ -1,3 +1,15 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    }
+
+body {
+    background: url("964419.jpg") no-repeat center center fixed; 
+    background-size: cover;
+}
+
 .lockscreen {
     position: fixed;
     top: 0;
@@ -14,4 +26,36 @@
 }
 .lockscreen.hidden {
     display: none;
+}
+
+.form-window {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(20px);
+}
+
+.input-form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-submit {
+    font-family: 'VT323', monospace;
+}
+
+h1 {
+    font-family: 'VT323', monospace;
+}
+
+.form-label {
+    font-family: 'VT323', monospace;
 }
