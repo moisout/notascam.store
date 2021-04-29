@@ -1,0 +1,98 @@
+.form-window {
+  width: 100%;
+  max-width: 460px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 5px;
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 0 25px 15px 25px;
+
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+html{
+    background-color: #e2e2e2;
+}
+
+.input-form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 0.8rem;
+  margin: 15px 0 0 0;
+}
+
+input[type="text"] {
+  height: 40px;
+  border: none;
+  padding: 0 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  outline: none;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus {
+  border: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+input[type="submit"] {
+  background-color: orangered;
+  color: #fff;
+  height: 40px;
+  margin: 10px 0;
+  border: none;
+  padding: 0 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+h1 {
+  color: orangered;
+}
+
+#output {
+  width: 100%;
+  max-width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 5px;
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 0 10px;
+
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+.overlay {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #00000065;
+  display: none;
+}
+
+.visible {
+  display: block !important;
+}

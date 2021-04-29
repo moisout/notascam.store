@@ -1,0 +1,36 @@
+.box {
+    background: linear-gradient(to right, #ead500 0px 139.5px, #db8400 139.5px 186px, #379a30 186px) 0px 232.5px,
+        linear-gradient(
+                to right,
+                #58b0bc 46.5px,
+                #ead500 46.5px 93px,
+                #894087 93px 139.5px,
+                #db8400 139.5px 232.5px,
+                #379a30 232.5px 279px
+            )
+            0px 186px,
+        linear-gradient(to right, #58b0bc 46.5px, #894087 46.5px 186px, #db8400 186px 232.5px, #379a30 232.5px 279px)
+            0px 139.5px,
+        linear-gradient(to right, #58b0bc 93px, #1465a6 93px) 0px 93px;
+    background-repeat: no-repeat;
+}
+
+.box {
+    background-color: #e5e5f7;
+    opacity: 0.4;
+    background: linear-gradient(135deg, #444cf755 25%, transparent 25%) -20px 0/ 40px 40px,
+        linear-gradient(225deg, #444cf7 25%, transparent 25%) -20px 0/ 40px 40px,
+        linear-gradient(315deg, #444cf755 25%, transparent 25%) 0px 0/ 40px 40px,
+        linear-gradient(45deg, #444cf7 25%, #e5e5f7 25%) 0px 0/ 40px 40px;
+}
+
+.box {
+    background-color: #e5e5f7;
+    opacity: 0.4;
+    background-image: linear-gradient(135deg, #444cf7 25%, transparent 25%),
+        linear-gradient(225deg, #444cf7 25%, transparent 25%), linear-gradient(45deg, #444cf7 25%, transparent 25%),
+        linear-gradient(315deg, #444cf7 25%, #e5e5f7 25%);
+    background-position: 18px 0, 18px 0, 0 0, 0 0;
+    background-size: 36px 36px;
+    background-repeat: repeat;
+}
