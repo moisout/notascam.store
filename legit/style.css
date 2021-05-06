@@ -14,8 +14,8 @@
   box-sizing: border-box;
 }
 
-html{
-    background-color: #e2e2e2;
+html {
+  background-color: #e2e2e2;
 }
 
 .input-form {
@@ -95,4 +95,9 @@ h1 {
 
 .visible {
   display: block !important;
+}
+
+svg {
+  position: relative;
+  transform: translateY(9px);
 }
